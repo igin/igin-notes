@@ -6,3 +6,9 @@ name = GitHub Pages
 enabled = yes
 default = yes
 target = ghpages://igin/igin.github.io
+
+[servers.github-travis]
+name = GitHub Pages For Travis
+enabled = yes
+default = no
+target = ghpages+https://igin/igin.github.io
