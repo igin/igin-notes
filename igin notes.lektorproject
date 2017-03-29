@@ -1,2 +1,8 @@
 [project]
 name = igin notes
+
+[servers.github]
+name = GitHub Pages
+enabled = yes
+default = yes
+target = ghpages://igin/igin.github.io
