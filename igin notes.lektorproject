@@ -12,3 +12,6 @@ name = GitHub Pages For Travis
 enabled = yes
 default = no
 target = ghpages+https://igin/igin.github.io
+
+[packages]
+lektor-markdown-highlighter = 0.1
