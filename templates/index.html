@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}My Projects{% endblock %}
+{% block body %}
+    {% set projects = site.query('/projects').all() %}
+    <h1>My Fancy Projects</h1>
+
+    <ul>
+        {% for project in projects %}
+            <li>
+                <a href="{{ project|url }}">{{ project.title }}</a> —
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

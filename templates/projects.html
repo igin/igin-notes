@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}My Projects{% endblock %}
+{% block body %}
+    <h1>My Projects</h1>
+
+    <ul>
+        {% for project in this.children %}
+            <li>
+                <a href="{{ project|url }}">{{ project.title }}</a> —
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
