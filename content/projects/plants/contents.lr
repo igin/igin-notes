@@ -1,3 +1,5 @@
 title: Plants
 ---
 pub_date: 2016-01-01
+---
+description: JavaScript experiment using L-System to simulate plant growth

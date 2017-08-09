@@ -1,33 +1,26 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<title>igin notes</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ '/static/css/normalize.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/css/skeleton.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>igin notes</title>
+</head>
 <body>
-  <header>
+<header>
     <div class="title">
         <div id="background-image"></div>
         <div class="avatar">
-            <h1>N</h1>
         </div>
-
     </div>
-
-  </header>
-  <nav>
-      <ul class="nav navbar-nav">
-          {% for href, title in [
-          ['/projects', 'Projects'],
-        ] %}
-              <li{% if this.is_child_of(href) %} class="active"{% endif
-                      %}><a href="{{ href|url }}">{{ title }}</a></li>
-          {% endfor %}
-      </ul>
-  </nav>
-  <div class="page">
+</header>
+<div class="page container">
     {% block body %}{% endblock %}
-  </div>
-  <footer>
-      <span>&copy; Copyright 2017 by Nicholas Pleschko.</span>
-  </footer>
+</div>
+<footer>
+    <span>&copy; Copyright 2017 by Nicholas Pleschko.</span>
+</footer>
 </body>
